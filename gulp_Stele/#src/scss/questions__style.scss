@@ -1,0 +1,50 @@
+.questions {
+    padding-top: 40px;
+
+    .questions__box {
+        display: flex;
+
+        
+
+        .questions__text {
+            padding: 0 40px;
+
+            .questions__box_header {
+                font-family: $fontFamilyPlay;
+                color: $backGroundColorMain;
+                font-size: 38px;
+                padding: 0 0 30px 30px;
+            }
+            .questions__text_paragraph {
+                padding: 10px 0;
+                color: $backGroundColorMain;
+                font-family: $fontFamily;
+                font-size: 18px;
+                color: #999933;
+            }
+
+
+            .questions__images {
+                padding-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                
+
+                .questions__images_img {
+                    
+                }
+               
+    
+            }
+        }
+
+    
+
+        
+
+
+
+
+    }
+
+}

@@ -1,0 +1,29 @@
+.section__about {
+    .about {
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+
+        .about__box {
+            line-height: 2;
+            margin: 0 auto;
+            text-align: center;
+
+            .about__box_paragraph {
+                font-family: $fontFamily;
+                font-size: 28px;
+                color: $backGroundColorMain;
+                
+            }
+            .about__box_header {
+                font-family: $fontFamilyPlay;
+                font-size: 38px;
+                color: $backGroundColorMain;
+
+            }
+        }
+        .about__image {
+            .about__image_img {}
+        }
+    }
+}

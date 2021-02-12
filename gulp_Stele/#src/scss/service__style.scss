@@ -1,0 +1,28 @@
+.section__service {
+    background-color: $backGroundColorMain;
+    margin-bottom: 40px;
+
+    .service__header {
+        font-size: 36px;
+        padding: 30px 0 0 60px;
+        margin-bottom: 30px;
+        color: #fff;
+        font-family: $fontFamilyPlay;
+    }
+    .service__box {
+        display: flex;
+        justify-content: center;
+        
+
+        .service__description {
+            min-width: 500px;
+            padding: 0 30px 0 30px;
+            .service__description_paragraph {
+                color: #fff;
+                margin-bottom: 15px;
+                font-size: 23px;
+                font-family: $fontFamily;
+            }
+        }
+    }
+}
