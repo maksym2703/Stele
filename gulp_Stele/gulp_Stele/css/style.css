@@ -630,7 +630,7 @@ h6 {
   position: absolute;
   width: 13px;
   height: 22px;
-  top: 7px;
+  top: 0;
   left: 0;
 }
 
@@ -815,6 +815,38 @@ h6 {
   }
 }
 
+@media screen and (max-width: 992px) and (max-width: 1199px) {
+  .container .header .site-head .site-head__text .site-head__text_header {
+    font-size: 28px;
+  }
+
+  .container .header .site-head .site-head__text .site-head__text_header2 {
+    font-size: 20px;
+  }
+
+  .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+
+  ._no-webp .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link::before{
+    background-image: url("../img/Mobile-head.png"); }
+
+  .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link::before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 22px;
+    top: 7px;
+    left: 0;
+  }
+
+  .container .header .site-head .site-head__city .site-head__city_name {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+}
+
 @media screen and (max-width: 678px) {
   .tabs {
     -webkit-box-orient: vertical;
@@ -864,6 +896,11 @@ h6 {
 ._webp .container .header .site-head .site-head__city .site-head__city_name::before{ background-image: url(../img/Place.webp); }
 
 @media screen and (max-width: 1199px){
+
+  ._webp .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link::before{ background-image: url(../img/Mobile-head.webp); }
+}
+
+@media screen and (max-width: 992px) and (max-width: 1199px){
 
   ._webp .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link::before{ background-image: url(../img/Mobile-head.webp); }
 }

@@ -72,7 +72,7 @@ $backGroundColorMain: #26273d;
 						background-image: url('../img/Mobile-head.png');
 						width: 13px;
 						height: 22px;
-						top: 7px;
+						top: 0;
 						left: 0;
 					}
 				}
@@ -188,7 +188,70 @@ $backGroundColorMain: #26273d;
 	}
 }
 
-
+@media screen and (max-width: 992px) {
+	@media screen and (max-width: 1199px) {
+		.container {
+			.header {
+				.site-head {
+					
+	
+					.site-head__logo {
+						.navigation__logo_image {}
+					}
+					.site-head__text {
+						.site-head__text_header {
+							font-size: 28px;
+						}
+		
+						.site-head__text_header2 {
+							font-size: 20px;
+						}
+					}
+					.site-head__tel {
+						.site-head__tel_number {
+							.site-head__tel_link {
+								font-size: 20px;
+								padding-left: 20px;
+							}
+							.site-head__tel_link::before {
+								content: '';
+								position: absolute;
+								background-image: url('../img/Mobile-head.png');
+								width: 13px;
+								height: 22px;
+								top: 7px;
+								left: 0;
+							}
+						}
+					}
+					.site-head__city {
+						.site-head__city_name {
+							font-size: 20px;
+							padding-left: 20px;
+							
+						}
+		
+						.site-head__city_name a {
+						}
+		
+						.site-head__city_name::before {}
+		
+					}
+				}
+			}
+			.navigation {
+				.navigation__nav {
+					.navigation__list {
+						.navigation__list_item {
+							.navigation__list_link {}
+						}
+					}
+				}
+			}
+			
+		}
+	}
+}
 
 
 
