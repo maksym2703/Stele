@@ -29,11 +29,13 @@
             .questions__images {
                 padding-top: 20px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
+                flex-wrap: wrap;
+                
                 
 
                 .questions__images_img {
-                    
+                    margin: 0 20px 0;
                 }
                
     
