@@ -1,5 +1,7 @@
 .questions {
     padding-top: 40px;
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
 
     .questions__box {
         display: flex;
