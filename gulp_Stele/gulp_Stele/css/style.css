@@ -229,11 +229,17 @@ h6 {
 }
 
 .section-ceiling {
+  max-width: 1400px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.section-ceiling .ceiling__image .ceiling__image_img-none {
+  display: none;
 }
 
 .section-ceiling .ceiling {
@@ -308,6 +314,11 @@ h6 {
 
 .section-ceiling .ceiling .tabs-content .tabs-panel.active {
   display: block;
+}
+
+.section__about {
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .section__about .about {
@@ -457,6 +468,8 @@ h6 {
 
 .questions {
   padding-top: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .questions .questions__box {
@@ -494,23 +507,25 @@ h6 {
           justify-content: space-between;
 }
 
-.reviews {
+.reviews .reviews__container {
+  max-width: 1400px;
+  margin: 0 auto;
   background-color: #26273d;
   margin-top: 40px;
 }
 
-.reviews .reviews__box {
+.reviews .reviews__container .reviews__box {
   padding: 0 30px 0 40px;
 }
 
-.reviews .reviews__box .reviews__head .reviews__head_header {
+.reviews .reviews__container .reviews__box .reviews__head .reviews__head_header {
   color: #fff;
   font-family: "Play-bold", serif;
   font-size: 38px;
   padding: 30px 0 40px 0;
 }
 
-.reviews .reviews__box .reviews__head .reviews__head_text {
+.reviews .reviews__container .reviews__box .reviews__head .reviews__head_text {
   color: #999933;
   font-family: "Roboto", serif;
   font-size: 18px;
@@ -518,7 +533,7 @@ h6 {
   line-height: 1.2;
 }
 
-.reviews .reviews__box .reviews__answers {
+.reviews .reviews__container .reviews__box .reviews__answers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -528,12 +543,12 @@ h6 {
       justify-content: space-around;
 }
 
-.reviews .reviews__box .reviews__answers .reviews__about {
+.reviews .reviews__container .reviews__box .reviews__answers .reviews__about {
   max-width: 40%;
   padding: 0 0 40px 0;
 }
 
-.reviews .reviews__box .reviews__answers .reviews__about .reviews__answers_header {
+.reviews .reviews__container .reviews__box .reviews__answers .reviews__about .reviews__answers_header {
   color: #fff;
   font-family: "Roboto", serif;
   font-size: 18px;
@@ -541,7 +556,7 @@ h6 {
   position: relative;
 }
 
-.reviews .reviews__box .reviews__answers .reviews__about .reviews__answers_header::before {
+.reviews .reviews__container .reviews__box .reviews__answers .reviews__about .reviews__answers_header::before {
   position: absolute;
   content: "";
   width: 15px;
@@ -552,7 +567,7 @@ h6 {
   background-color: #999933;
 }
 
-.reviews .reviews__box .reviews__answers .reviews__about .reviews__answers_paragraph {
+.reviews .reviews__container .reviews__box .reviews__answers .reviews__about .reviews__answers_paragraph {
   color: #fff;
   font-family: "Roboto", serif;
   font-size: 14px;
@@ -655,8 +670,136 @@ h6 {
   font-weight: 700;
 }
 
-.footer__main {
-  margin-top: 40px;
+@media screen and (max-width: 1199px) {
+  .section-ceiling {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .section-ceiling .ceiling__image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .section-ceiling .ceiling__image .ceiling__image_img {
+    display: none;
+  }
+
+  .section-ceiling .ceiling__image .ceiling__image_img-none {
+    display: inline;
+    padding: 0 20px;
+  }
+
+  .section-ceiling .ceiling {
+    max-width: 100%;
+  }
+
+  .section-ceiling .ceiling .tabs-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .section-ceiling .ceiling .tabs-container .tabs {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .section-ceiling .ceiling .tabs-container .tabs .tabs__item a {
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #26273d;
+    padding: 7px;
+    border-radius: 5px;
+  }
+
+  .section-ceiling .ceiling .tabs-container .tabs li:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  .section-ceiling .ceiling .tabs-container .tabs li a {
+    display: block;
+    position: relative;
+    top: 4px;
+    padding: 10px 20px;
+    border-radius: 2px 2px 0 0;
+    background: #26273d;
+    opacity: 0.7;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .section-ceiling .ceiling .tabs-container .tabs li.active a,
+  .section-ceiling .ceiling .tabs-container .tabs li a:hover {
+    opacity: 1;
+    top: 0;
+  }
+
+  .section-ceiling .ceiling .tabs-content {
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+    border-radius: 0 4px 4px 4px;
+  }
+
+  .section-ceiling .ceiling .tabs-content .tabs-panel {
+    display: none;
+  }
+
+  .section-ceiling .ceiling .tabs-content .tabs-panel p {
+    text-align: justify;
+    font-family: "Roboto", serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #26273d;
+    font-weight: 700;
+  }
+
+  .section-ceiling .ceiling .tabs-content .tabs-panel.active {
+    display: block;
+  }
+
+  .section__slide .slider__box .slider {
+    padding: 0 25px;
+  }
+
+  .container .header .site-head {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .container .header .site-head .site-head__text .site-head__text_header {
+    font-size: 32px;
+  }
+
+  .container .header .site-head .site-head__text .site-head__text_header2 {
+    font-size: 24px;
+  }
+
+  .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link {
+    font-size: 24px;
+  }
+
+  ._no-webp .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link::before{
+    background-image: url("../img/Mobile-head.png"); }
+
+  .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link::before {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 22px;
+    top: 7px;
+    left: 0;
+  }
+
+  .container .header .site-head .site-head__city .site-head__city_name {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 678px) {
@@ -706,3 +849,8 @@ h6 {
 ._webp .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link::before{ background-image: url(../img/Mobile-head.webp); }
 
 ._webp .container .header .site-head .site-head__city .site-head__city_name::before{ background-image: url(../img/Place.webp); }
+
+@media screen and (max-width: 1199px){
+
+  ._webp .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link::before{ background-image: url(../img/Mobile-head.webp); }
+}
