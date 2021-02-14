@@ -74,9 +74,38 @@
             .service__description {
                 min-width: 500px;
                 padding: 0 30px 0 30px;
+                text-align: justify;
                 .service__description_paragraph {
                     margin-bottom: 15px;
                     font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .section__service {
+        margin-bottom: 10px;
+    
+        .service__header {
+            font-size: 18px;
+            padding: 20px 0 0 30px;
+            margin-bottom: 20px;
+        }
+        .service__box {
+            display: flex;
+            justify-content: center;
+            
+    
+            .service__description {
+                min-width: 300px;
+                padding: 0 25px 0 25px;
+                text-align: justify;
+                .service__description_paragraph {
+                    margin-bottom: 20px;
+                    font-size: 14px;
                 }
             }
         }

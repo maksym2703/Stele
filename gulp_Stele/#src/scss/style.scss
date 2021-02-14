@@ -328,7 +328,11 @@ $backGroundColorMain: #26273d;
 	}
 }
 
-
+@media screen and (max-width: 768px) {
+	.footer__main {
+		margin-top: 20px;
+	}
+}
 
 
 
@@ -365,3 +369,71 @@ $backGroundColorMain: #26273d;
 	  border-radius: 0;
 	}
   }
+
+@media screen and (max-width: 576px) {
+	.container {
+		.header {
+			.site-head {
+				.site-head__logo {
+					.navigation__logo_image {}
+				}
+				.site-head__text {
+					.site-head__text_header {
+						font-size: 24px;
+					}
+					.site-head__text_header2 {
+						font-size: 18px;
+					}
+				}
+				.site-head__tel {
+					.site-head__tel_number {
+						.site-head__tel_link {
+							font-size: 18px;
+						}
+						.site-head__tel_link::before {
+							content: '';
+							position: absolute;
+							background-image: url('../img/Mobile-head.png');
+							width: 13px;
+							height: 22px;
+							top: 7px;
+							left: 0;
+						}
+					}
+				}
+				.site-head__city {
+					.site-head__city_name {
+						font-size: 18px;
+					}
+	
+					.site-head__city_name a {
+					}
+					.site-head__city_name::before {
+						position: absolute;
+						content: "";
+						background-image: url('../img/Place.png');
+						width: 16px;
+						height: 22px;
+						top: 0;
+						left: 0;
+					}
+				}
+			}
+		}
+		.navigation {
+			.navigation__nav {
+				.navigation__list {
+					padding: 10px 10px;
+					.navigation__list_item {
+						display: block;
+						padding: 0 20px 0 0;
+						.navigation__list_link {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}

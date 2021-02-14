@@ -33,18 +33,28 @@ for(let el of tabLinks) {
 };
 
 
-
 $(document).ready(function(){
     $('.slider').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        dots: true,
-        responsive: [{
+        adaptiveHeight: true,
+          responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll:  1,
+                dots: true
+              }
+            },
+          {
             breakpoint: 992,
             settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrow: false,
+              dots: true
             }
           },
           {
@@ -53,10 +63,12 @@ $(document).ready(function(){
               slidesToShow: 1,
               slidesToScroll: 1,
               dots: true,
-              arrows: false
             }
-          }]
+          }
+        ]
     });
 });
+
+
 
 

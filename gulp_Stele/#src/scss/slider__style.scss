@@ -40,12 +40,12 @@
             }
 
             .slick-next {
-                right: 0;
+                right: 20px;
                 background: url('../img/ArrRight.png') 0 0/ 100% no-repeat;
             }
 
             .slick-prev {
-                left: 0;
+                left: 20px;
                 background: url('../img/ArrLeft.png') 0 0/ 100% no-repeat;
 
             }
@@ -111,6 +111,62 @@
                 }
     
                 .slick-prev {
+    
+                }
+    
+                .slick-dots {
+                }
+    
+                .slick-dots button {
+                }
+    
+                .slick-dots li {
+                }
+    
+                .slick-active button {
+                }
+    
+                .slider__item {
+    
+                    .slider__description {}
+                }
+    
+            }
+    
+        }
+    
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section__slide {
+
+        .slider__box {
+            
+    
+            .slider__box_header {
+                
+            }
+    
+            .slider {
+    
+                .slick-list {
+                    
+                }
+                .slick-track{
+    
+                }
+    
+                .slick-arrow {
+    
+                }
+    
+                .slick-next {
+                   display: none;
+                }
+    
+                .slick-prev {
+                    display: none;
     
                 }
     
