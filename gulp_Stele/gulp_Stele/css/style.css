@@ -504,6 +504,12 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.questions .questions__box .questions__text .questions__images .questions__images_img {
+  margin: 0 20px 0;
 }
 
 .reviews .reviews__container {
@@ -669,6 +675,10 @@ h6 {
   font-weight: 700;
 }
 
+.footer__main {
+  margin-top: 40px;
+}
+
 @media screen and (max-width: 1199px) {
   .section-ceiling {
     display: block;
@@ -686,7 +696,7 @@ h6 {
 
   .section-ceiling .ceiling__image .ceiling__image_img-none {
     display: inline;
-    padding: 0 20px;
+    padding: 0 10px;
   }
 
   .section-ceiling .ceiling {
@@ -766,6 +776,10 @@ h6 {
 
   .section__slide .slider__box .slider {
     padding: 0 25px;
+  }
+
+  .questions__images_img4-none {
+    display: none;
   }
 
   .container .header .site-head {

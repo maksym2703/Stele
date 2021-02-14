@@ -4,9 +4,7 @@
     margin: 0 auto 40px;
 
     .questions__box {
-        display: flex;
-
-        
+        display: flex;    
 
         .questions__text {
             padding: 0 40px;
@@ -25,28 +23,22 @@
                 color: #999933;
             }
 
-
             .questions__images {
                 padding-top: 20px;
                 display: flex;
                 justify-content: space-between;
-                
+                flex-wrap: wrap;    
 
                 .questions__images_img {
-                    
-                }
-               
-    
+                    margin: 0 20px 0;
+                }                
             }
         }
-
-    
-
-        
-
-
-
-
     }
+}
 
+@media screen and (max-width: 1199px) {
+    .questions__images_img4-none {
+        display: none;
+    }
 }
