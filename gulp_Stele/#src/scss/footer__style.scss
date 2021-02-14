@@ -124,3 +124,73 @@
     }
 
 }
+
+@media screen and (max-width: 992px) {
+    .footer {    
+    
+        .footer-box {            
+    
+            .footer-box__logo {
+                max-width: 240px;                   
+    
+                .footer-box__logo_image {}
+
+                .footer-box__logo_text {
+                    text-align: justify;
+                    color: #999933;
+                    font-family: $fontFamily;
+                    font-size: 10px;
+                    line-height: 1.2;
+                }
+            }
+    
+    
+            .footer-box__map {}
+    
+            .footer-box__contacts {
+                color: #999933;
+                font-family: $fontFamily;
+                font-size: 12px;
+                text-transform: uppercase;
+                
+    
+                .footer-box__contacts_text {
+                }
+                .footer-box__contacts_phone {
+                    
+                }
+    
+                .footer-box__contacts_phone::before {
+                    top: 5px;
+                }
+    
+                .footer-box__contacts_phone a{
+                }
+                .footer-box__contacts_email {
+                }
+    
+                .footer-box__contacts_email::before {
+                    top: 2px;
+    
+                }
+    
+                .footer-box__contacts_fb {
+                }
+    
+                .footer-box__contacts_fb a {
+                }
+    
+                .footer-box__contacts_fb::before {
+                    top: 5px;
+                }
+    
+                .footer-box__contacts_addres {}
+    
+                .footer-box__contacts_addres::before {
+                    top: 5px;
+                }
+            }
+        }
+    
+    }
+}

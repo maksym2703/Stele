@@ -42,3 +42,24 @@
         display: none;
     }
 }
+
+
+@media screen and (max-width: 992px) {
+    .questions {    
+        .questions__box { 
+                .questions__text {    
+                .questions__box_header {
+                }
+                .questions__text_paragraph {
+                }
+    
+                .questions__images {
+                    display: none;
+    
+                    .questions__images_img {
+                    }                
+                }
+            }
+        }
+    }
+}

@@ -189,12 +189,9 @@ $backGroundColorMain: #26273d;
 }
 
 @media screen and (max-width: 992px) {
-	@media screen and (max-width: 1199px) {
 		.container {
 			.header {
 				.site-head {
-					
-	
 					.site-head__logo {
 						.navigation__logo_image {}
 					}
@@ -214,13 +211,7 @@ $backGroundColorMain: #26273d;
 								padding-left: 20px;
 							}
 							.site-head__tel_link::before {
-								content: '';
-								position: absolute;
-								background-image: url('../img/Mobile-head.png');
-								width: 13px;
-								height: 22px;
-								top: 7px;
-								left: 0;
+								top: 0px;
 							}
 						}
 					}
@@ -234,7 +225,10 @@ $backGroundColorMain: #26273d;
 						.site-head__city_name a {
 						}
 		
-						.site-head__city_name::before {}
+						.site-head__city_name::before {
+							top: 0px;
+
+						}
 		
 					}
 				}
@@ -242,8 +236,12 @@ $backGroundColorMain: #26273d;
 			.navigation {
 				.navigation__nav {
 					.navigation__list {
+						padding: 10px 0 0 25px;
 						.navigation__list_item {
-							.navigation__list_link {}
+							padding: 0 40px 0 0;
+							.navigation__list_link {
+						font-size: 18px;
+							}
 						}
 					}
 				}
@@ -251,7 +249,7 @@ $backGroundColorMain: #26273d;
 			
 		}
 	}
-}
+
 
 
 

@@ -8,7 +8,9 @@
 
     .ceiling__image {
 
-        .ceiling__image_img {}
+        .ceiling__image_img {
+            margin: 0 auto;
+        }
 
         .ceiling__image_img-none {
             display: none;
@@ -21,7 +23,6 @@
         .tabs-container {
             max-width: 1000px;
             margin: 0 auto;
-            // padding: 25px;
 
             .tabs {
                 display: flex;
@@ -123,20 +124,78 @@
             display: inline;
             padding: 0 10px;
         }
-
-        
     }
 
     .ceiling {
         max-width: 100%;
 
         .tabs-container {
-            max-width: 1000px;
-            margin: 0 auto;
-
             .tabs {
                 display: flex;
                 justify-content: start;
+                .active {}
+
+                .tabs__item a{}
+
+                .active a {}
+            }
+
+            .tabs li:not(:last-child) {
+              }
+
+              .tabs li a {
+              }
+
+                  .tabs li.active a,
+                .tabs li a:hover {
+                }
+        
+        }
+        
+            .tabs-content {
+
+                .tabs-panel {
+                }
+
+                .tabs-panel p {
+                }
+
+                .tabs-panel.active {
+                  }
+
+                .active{}
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .section-ceiling {
+
+    
+
+    .ceiling__image {
+
+        .ceiling__image_img {
+            display: none;
+        }
+
+        .ceiling__image_img-none {
+        }
+
+        .none-2 {
+            display: none;
+        }
+
+        
+    }
+
+    .ceiling {
+
+        .tabs-container {
+
+            .tabs {
+            margin-left: 30px;
                 
 
                 .active {
@@ -144,13 +203,6 @@
                 }
 
                 .tabs__item a{
-                    font-family: $fontFamily;
-                    font-size: 14px;
-                    text-transform: uppercase;
-                    color: #fff;
-                    background-color: $backGroundColorMain;
-                    padding: 7px;
-                    border-radius: 5px;
                 }
 
                 .active a {
@@ -159,50 +211,27 @@
             }
 
             .tabs li:not(:last-child) {
-                margin-right: 8px;
+                margin-right: 20px;
               }
 
               .tabs li a {
-                display: block;
-                position: relative;
-                top: 4px;
-                padding: 10px 20px;
-                border-radius: 2px 2px 0 0;
-                background: $backGroundColorMain;
-                opacity: 0.7;
-                transition: all 0.1s ease-in-out;
               }
 
                   .tabs li.active a,
                 .tabs li a:hover {
-                opacity: 1;
-                top: 0;
                 }
         
         }
         
             .tabs-content {
-                position: relative;
-                z-index: 2;
-                padding: 25px;
-                border-radius: 0 4px 4px 4px;
-                // background: white;
 
                 .tabs-panel {
-                    display: none;
                 }
 
                 .tabs-panel p {
-                    text-align: justify;
-                    font-family: $fontFamily;
-                    font-size: 14px;
-                    line-height: 1.5;
-                    color: $backGroundColorMain;
-                    font-weight: 700;
                 }
 
                 .tabs-panel.active {
-                    display: block;
                   }
 
                 .active{}
