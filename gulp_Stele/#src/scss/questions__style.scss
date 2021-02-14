@@ -63,3 +63,33 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .questions {
+        padding-top: 20px;
+        margin: 0 auto 20px;
+    
+        .questions__box {
+    
+            .questions__text {
+                padding: 0 20px;
+    
+                .questions__box_header {
+                    font-family: $fontFamilyPlay;
+                    color: $backGroundColorMain;
+                    font-size: 30px;
+                    padding: 0 0 10px 20px;
+                }
+                .questions__text_paragraph {
+                    font-size: 14px;
+                }
+    
+                .questions__images {
+    
+                    .questions__images_img {
+                    }                
+                }
+            }
+        }
+    }
+}

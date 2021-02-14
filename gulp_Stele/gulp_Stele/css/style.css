@@ -936,6 +936,26 @@ h6 {
     font-size: 18px;
   }
 
+  .questions {
+    padding-top: 20px;
+    margin: 0 auto 20px;
+  }
+
+  .questions .questions__box .questions__text {
+    padding: 0 20px;
+  }
+
+  .questions .questions__box .questions__text .questions__box_header {
+    font-family: "Play-bold", serif;
+    color: #26273d;
+    font-size: 30px;
+    padding: 0 0 10px 20px;
+  }
+
+  .questions .questions__box .questions__text .questions__text_paragraph {
+    font-size: 14px;
+  }
+
   .reviews .reviews__container .reviews__box .reviews__head .reviews__head_header {
     font-size: 32px;
   }
