@@ -30,7 +30,7 @@ for(let el of tabLinks) {
     const panel = [...tabPanels].filter(el => el.getAttribute("data-index") == index);
     panel[0].classList.add("active");
   });
-}
+};
 
 
 
@@ -39,8 +39,8 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        responsive: [
-          {
+        dots: true,
+        responsive: [{
             breakpoint: 992,
             settings: {
               slidesToShow: 2,
@@ -55,8 +55,7 @@ $(document).ready(function(){
               dots: true,
               arrows: false
             }
-          }
-          ]
+          }]
     });
 });
 

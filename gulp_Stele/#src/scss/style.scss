@@ -251,28 +251,109 @@ $backGroundColorMain: #26273d;
 	}
 
 
+@media screen and (max-width: 768px) {
+	.container {
+		.header {
+			.site-head {
+				display: block;
+				padding: 0;
+				.site-head__logo {
+					text-align: center;
+					padding: 20px 0 10px 0;
+					.navigation__logo_image {}
+				}
+				.site-head__text {
+					text-align: center;
+					padding-bottom: 10px;
+
+					.site-head__text_header {
+						font-size: 30px;
+					}
+					.site-head__text_header2 {
+						font-size: 24px;
+					}
+				}
+				.site-head__tel {
+					text-align: center;
+					padding-bottom: 10px;
+
+					.site-head__tel_number {
+						.site-head__tel_link {
+							font-size: 24px;
+						}
+						.site-head__tel_link::before {
+							display: none;
+						}
+					}
+				}
+				.site-head__city {
+					text-align: center;
+					padding-bottom: 10px;
+
+
+					.site-head__city_name {
+						font-size: 24px;
+						text-align: center;
+
+
+					}
+	
+					.site-head__city_name a {
+					}
+					.site-head__city_name::before {
+						display: none;
+					}
+				}
+			}
+		}
+		.navigation {
+			.navigation__nav {
+
+				.navigation__list {
+					text-align: center;
+					padding: 10px 10px 0 0;
+					.navigation__list_item {
+						display: inline;
+						padding: 0 20px 0 0;
+						.navigation__list_link {
+							color: #999933;
+							font-size: 18px;
+							font-weight: 400;
+						}
+					}
+				}
+			}
+		}
+		
+	}
+}
 
 
 
 
 
-@media screen and (max-width: 678px) {
+@media screen and (max-width: 687px) {
 	.tabs {
 	  flex-direction: column;
+	  margin: 0;
+	  
 	}
 	   
 	.tabs li {
 	  width: 100%;
+	  margin: 0;
 	}
 	   
 	.tabs li:not(:last-child) {
 	  margin-right: 0;
+	  margin: 0;
 	}
 	   
 	.tabs li a {
 	  border-radius: 0;
 	  opacity: 1;
 	  top: 0;
+	  margin: 0;
 	}
 	   
 	.tabs li.active a::before {
