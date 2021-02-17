@@ -365,6 +365,11 @@ h6 {
   font-size: 16px;
 }
 
+.section__about .about .about__image .calc {
+  border-color: #436;
+  font-size: large;
+}
+
 .section__service {
   background-color: #26273d;
   margin-bottom: 40px;
