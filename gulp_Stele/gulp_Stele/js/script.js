@@ -74,7 +74,41 @@ function findOption(select) {
 }
 var select = document.querySelector('select');
 select.addEventListener('change', () => {
-  alert(select.value);
-});
+  // alert(select.value);
+  let k;
+  switch (select.value) {
+    case "one":
+        k=200;
+      // alert('k='+k);
+      break;
+    case "two":
+        k=200;
+      // alert('k='+k);
+      break;
+    case "three":
+        k=500;
+      // alert('k='+k);
+      break;
+      case "four":
+        k=700;
+      // alert('k='+k);
+      break;
+      // default:
+      case "five":
+        k=800;
+      // alert('k='+k);
+      break;
+      // default:
+    
+  };
 
+ let x = document.getElementById('s').value; 
+//  alert('x='+x);
+ 
+ let y;
+
+ y = k * x;
+//  alert( 'y='+ y );
+ document.getElementById('rezul').innerHTML = "Стоимость потолка (грн.):" + y;
+});
 
