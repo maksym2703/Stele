@@ -9,10 +9,7 @@
         .reviews__box {
             padding: 0 30px 0 40px;
             
-
-
             .reviews__head {
-
 
                 .reviews__head_header {
                     color: #fff;
@@ -34,12 +31,10 @@
                 flex-wrap: wrap;
                 justify-content: space-around;
                 
-
                 .reviews__about {
                     max-width: 40%;
                     padding: 0 0 40px 0;
                     
-
                     .reviews__answers_header {
                         color: #fff;
                         font-family: $fontFamily;
@@ -70,14 +65,10 @@
                     .reviews__answers_bnt {
                         display: none;
                     }
-                }
-
-                
+                }                
             }
-
         }
     }
-
 }
 
 

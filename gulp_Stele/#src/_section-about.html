@@ -3,6 +3,31 @@
         <div class="about__box">
             <p class="about__box_paragraph">Натяжные потолки</p>
             <h2 class="about__box_header">в Фастове</h2>
+            <form>
+                <p>Длина комнаты:</p>
+                <p><input type="number" id="a" value="1" min="1" max="50" step="1"></p>
+                <p>Ширина комнаты:</p>
+                <p><input type="number" id="b" value="1" min="1" max="50" step="1"></p>
+                <p>Если знаете введите сразу лощадь комнаты:</p>
+                <p><input type="number" id="s" value="1" min="1" max="50" step="1"></p>
+                
+                <input type="radio" id="typ1" name="glanec" value="200">
+                <label for="typ1">Глянцевые</label>
+                
+                <input type="radio" id="typ2" name="matt" value="200">
+                <label for="typ2">Матовые</label>
+          
+                <input type="radio" id="typ3" name="double" value="500">
+                <label for="typ3">Двухуровневые</label>
+
+                <input type="radio" id="typ4" name="photo" value="700">
+                <label for="typ4">С фотопечатью</label>ё
+
+                <input type="radio" id="typ5" name="backlight" value="800">
+                <label for="typ5">С подсветкой</label>
+
+                <button id="btn" class="about__btn">посчитать</button>
+
             <form class="calc">
             <p>Длина комнаты (м):</p>
             <p><input type="number" id="a" value="1" min="1" max="50" step="1"></p>
@@ -10,6 +35,7 @@
             <p><input type="number" id="b" value="1" min="1" max="50" step="1"></p>
             <p>Если знаете введите сразу лощадь комнаты (м²):</p>
             <p><input type="number" id="s" value="1" min="1" max="50" step="1"></p>
+            
             <label >Выбрать тип потолка:</label>
         <select onchange='findOption(this)'>
           <option value='one'>Глянцевые</option>
@@ -20,11 +46,8 @@
         </select>
             <button id="btn" class="about__btn">посчитать</button>
             <label id="rezul">Результат</label>
-           </form>
 
-        </div>
-        <div class="about__image">
-            <img class="about__image_img" src="img/main__room.jpg" alt="picture">
+        <img class="about__image_img" src="img/main__room.jpg" alt="picture">
         </div>
     </div>
 </section>
