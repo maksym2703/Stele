@@ -4,14 +4,15 @@
             <p class="about__box_paragraph">Натяжные потолки</p>
             <h2 class="about__box_header">в Фастове</h2>
             <form class="calc">
-            <p>Длина комнаты:</p>
+            <p>Длина комнаты (м):</p>
             <p><input type="number" id="a" value="1" min="1" max="50" step="1"></p>
-            <p>Ширина комнаты:</p>
+            <p>Ширина комнаты (м):</p>
             <p><input type="number" id="b" value="1" min="1" max="50" step="1"></p>
-            <p>Если знаете введите сразу лощадь комнаты:</p>
+            <p>Если знаете введите сразу лощадь комнаты (м²):</p>
             <p><input type="number" id="s" value="1" min="1" max="50" step="1"></p>
-
-            <input type="radio" id="typ1"
+            <label >Выбрать тип потолка:</label>
+        <select onchange='findOption(this)'>
+            <!-- <input type="radio" id="typ1"
             name="type" value="200">
            <label for="typ1">Глянцевые</label>
 
@@ -29,10 +30,16 @@
 
           <input type="radio" id="typ5"
           name="type" value="800">
-          <label for="typ5">С подсветкой</label>
-
+          <label for="typ5">С подсветкой</label> --> 
+          
+          <option value='one'>Глянцевые</option>
+          <option value='two'>Матовые</option>
+          <option value='three'>Двухуровневые</option>
+          <option value='four'>С фотопечатью</option>
+          <option value='five'>С подсветкой</option>
+        </select>
             <button id="btn" class="about__btn">посчитать</button>
-
+            <label id="rezul">Результат</label>
            </form>
 
         </div>
