@@ -68,7 +68,13 @@ $(document).ready(function(){
         ]
     });
 });
-
-
+function findOption(select) {
+  const option = select.querySelector(`option[value="${select.value}"]`)
+  // Действия над option
+}
+var select = document.querySelector('select');
+select.addEventListener('change', () => {
+  alert(select.value);
+});
 
 
