@@ -3,24 +3,22 @@
         <div class="about__box">
             <p class="about__box_paragraph">Натяжные потолки</p>
             <h2 class="about__box_header">в Фастове</h2>
+
             <form class="about__form">
-                <p class="about__form_length">Длина комнаты (м):</p>
-                <input class="about__form_length-input" type="number" id="a" value="1" min="1" max="50" step="1">
-                <p class="about__form_height">Ширина комнаты (м):</p>
-                <input class="about__form_height-input" type="number" id="b" value="1" min="1" max="50" step="1">
-                <p class="about__form_square">Если знаете введите сразу лощадь комнаты (м²):</p>
-                <input class="about__form_square-input" type="number" id="s" value="1" min="1" max="50" step="1">
+                <p class="about__form_square">Площадь потолка (м²):
+                    <input class="about__form_square-input" type="number" id="s" value="1" min="1" max="50" step="1">
+                </p>
                 <label>Выбрать тип потолка:</label>
-                <select onchange='findOption(this)'>
+                <select class="select" onchange='findOption(this)'>
                 <option value='one'>Глянцевые</option>
                 <option value='two'>Матовые</option>
                 <option value='three'>Двухуровневые</option>
                 <option value='four'>С фотопечатью</option>
                 <option value='five'>С подсветкой</option>
                 </select>
-                <button id="btn" class="about__btn">посчитать</button>
-                <label id="rezul">Результат</label>
-           </form>
+                <label class="about__form_result" id="rezul">Результат</label>
+
+            </form>
         </div>
         <div class="about__image">
             <img class="about__image_img" src="img/main__room.jpg" alt="picture">
