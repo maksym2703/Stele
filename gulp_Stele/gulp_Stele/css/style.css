@@ -1394,6 +1394,10 @@ h6 {
     font-size: 14px;
   }
 
+  .section__slide .slider__box .slider__box_header {
+    font-size: 24px;
+  }
+
   .section__slide .slider__box .slider .slick-arrow {
     display: none;
   }
