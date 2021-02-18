@@ -327,7 +327,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 30px 0;
+  padding: 0 0 20px 0;
 }
 
 .section__about .about .about__box {
@@ -338,35 +338,7 @@ h6 {
 
 .section__about .about .about__box .about__box_paragraph {
   font-family: "Roboto", serif;
-  font-size: 28px;
-  color: #26273d;
-}
-
-.section__about .about .about__box .about__box_header {
-  font-family: "Play-bold", serif;
-  font-size: 38px;
-  color: #26273d;
-}
-
-.section__about .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 30px 0;
-}
-
-.section__about .about .about__box {
-  line-height: 2;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.section__about .about .about__box .about__box_paragraph {
-  font-family: "Roboto", serif;
-  font-size: 28px;
+  font-size: 24px;
   color: #26273d;
 }
 
@@ -378,25 +350,29 @@ h6 {
 
 .section__about .about .about__box .about__form {
   font-family: "Play-bold", serif;
-  font-size: 26px;
+  font-size: 24px;
   color: #999933;
 }
 
 .section__about .about .about__box .about__form .about__form_square .about__form_square-input {
   font-family: "Play-bold", serif;
-  font-size: 36px;
-  color: #c81231;
+  font-size: 28px;
+  color: #26273d;
   text-align: center;
+  background-color: #aaa;
 }
 
 .section__about .about .about__box .about__form .select {
   color: #c81231;
   font-family: "Play-bold", serif;
   font-size: 20px;
+  margin-left: 20px;
+  background-color: #aaa;
 }
 
 .section__about .about .about__box .about__form .about__form_result {
   display: block;
+  margin: 20px 0 0 0;
 }
 
 .section__service {
@@ -713,6 +689,10 @@ h6 {
   left: 0;
 }
 
+.container .navigation .navigation__nav {
+  padding-bottom: 10px;
+}
+
 .container .navigation .navigation__nav .navigation__list {
   padding: 10px 30px;
 }
@@ -937,6 +917,20 @@ h6 {
   }
 }
 
+@media screen and (max-width: 991px) {
+  ._no-webp .section__about .about{
+    background: url("../img/main__room.jpg") no-repeat 0 0/auto auto; }
+
+  .section__about .about .about__box {
+    margin: 0 0 0 150px;
+    text-align: left;
+  }
+
+  .section__about .about .about__image {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .footer {
     padding: 10px 0;
@@ -971,7 +965,7 @@ h6 {
   .footer .footer-box .footer-box__contacts .footer-box__contacts_phone {
     padding: 10px 0;
     position: relative;
-    margin-left: 20px;
+    margin-left: 0;
   }
 
   ._no-webp .footer .footer-box .footer-box__contacts .footer-box__contacts_phone::before{
@@ -994,7 +988,7 @@ h6 {
     padding: 10px 0;
     text-transform: none;
     position: relative;
-    margin-left: 20px;
+    margin-left: 0;
   }
 
   ._no-webp .footer .footer-box .footer-box__contacts .footer-box__contacts_email::before{
@@ -1029,7 +1023,7 @@ h6 {
     width: 25px;
     height: 24px;
     top: 5px;
-    left: -35px;
+    left: -55px;
   }
 
   .footer .footer-box .footer-box__contacts .footer-box__contacts_addres {
@@ -1048,7 +1042,7 @@ h6 {
     width: 16px;
     height: 22px;
     top: 5px;
-    left: -30px;
+    left: -50px;
   }
 
   .section-ceiling .ceiling__image {
@@ -1086,6 +1080,11 @@ h6 {
 
   .section-ceiling .ceiling .tabs-content .tabs-panel p {
     line-height: 1.2;
+  }
+
+  .section__about .about .about__box {
+    margin: 0 auto;
+    text-align: left;
   }
 
   .section__service {
@@ -1395,6 +1394,10 @@ h6 {
     font-size: 14px;
   }
 
+  .section__slide .slider__box .slider .slick-arrow {
+    display: none;
+  }
+
   .section__slide .slider__box .slider .slick-next {
     display: none;
   }
@@ -1482,6 +1485,49 @@ h6 {
   }
 }
 
+@media screen and (max-width: 489px) {
+  .section__about .about {
+    background: none;
+  }
+
+  .section__about .about .about__box {
+    text-align: center;
+  }
+
+  .section__about .about .about__box .about__box_paragraph {
+    font-size: 18px;
+  }
+
+  .section__about .about .about__box .about__box_header {
+    font-size: 28px;
+  }
+
+  .section__about .about .about__box .about__form .about__form_square {
+    font-size: 18px;
+  }
+
+  .section__about .about .about__box .about__form .about__form_square .about__form_square-input {
+    font-size: 18px;
+  }
+
+  .section__about .about .about__box .about__form .about__form_label {
+    font-size: 18px;
+  }
+
+  .section__about .about .about__box .about__form .select {
+    display: block;
+  }
+
+  .section__about .about .about__box .about__form .paragraph__result {
+    font-size: 18px;
+  }
+
+  .section__about .about .about__box .about__form .about__form_result {
+    font-size: 20px;
+    margin: 0;
+  }
+}
+
 ._webp .footer .footer-box .footer-box__contacts .footer-box__contacts_phone::before{ background-image: url(../img/Mobile-head.webp); }
 
 ._webp .footer .footer-box .footer-box__contacts .footer-box__contacts_email::before{ background-image: url(../img/message.webp); }
@@ -1501,6 +1547,11 @@ h6 {
 @media screen and (max-width: 1199px){
 
   ._webp .container .header .site-head .site-head__tel .site-head__tel_number .site-head__tel_link::before{ background-image: url(../img/Mobile-head.webp); }
+}
+
+@media screen and (max-width: 991px){
+
+  ._webp .section__about .about{ background: url(../img/main__room.webp) no-repeat 0 0/auto auto; }
 }
 
 @media screen and (max-width: 768px){

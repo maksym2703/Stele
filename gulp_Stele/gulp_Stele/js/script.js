@@ -45,7 +45,9 @@ $(document).ready(function(){
               settings: {
                 slidesToShow: 2,
                 slidesToScroll:  1,
-                dots: true
+                dots: false
+                // arrow: true
+
               }
             },
           {
@@ -53,8 +55,6 @@ $(document).ready(function(){
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrow: false,
-              dots: true
             }
           },
           {
@@ -63,6 +63,7 @@ $(document).ready(function(){
               slidesToShow: 1,
               slidesToScroll: 1,
               dots: true,
+
             }
           }
         ]
@@ -74,41 +75,32 @@ function findOption(select) {
 }
 var select = document.querySelector('select');
 select.addEventListener('change', () => {
-  // alert(select.value);
   let k;
   switch (select.value) {
     case "one":
         k=200;
-      // alert('k='+k);
       break;
     case "two":
         k=200;
-      // alert('k='+k);
       break;
     case "three":
         k=500;
-      // alert('k='+k);
       break;
       case "four":
         k=700;
-      // alert('k='+k);
       break;
-      // default:
       case "five":
         k=800;
-      // alert('k='+k);
       break;
-      // default:
-    
   };
 
- let x = document.getElementById('s').value; 
-//  alert('x='+x);
- 
- let y;
-
+ let x = document.getElementById('s').value;  
+ let y = 100;
  y = k * x;
-//  alert( 'y='+ y );
- document.getElementById('rezul').innerHTML = "Стоимость потолка (грн.):" + y;
+let result = document.getElementById('rezul');
+result.style.color = ' #26273d';
+result.style.fontSize = '40px';
+result.innerHTML = `${y} грн.`;
+
 });
 

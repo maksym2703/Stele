@@ -1,12 +1,9 @@
 .section__about {
-    // margin: 0 auto;
-    // max-width: $maxWidthContainer;
-    
+
     .about {
         display: flex;
         justify-content: space-between;
-        padding: 30px 0;
-
+        padding: 0 0 20px 0;
         .about__box {
             line-height: 2;
             margin: 0 auto;
@@ -14,50 +11,7 @@
 
             .about__box_paragraph {
                 font-family: $fontFamily;
-                font-size: 28px;
-                color: $backGroundColorMain;
-                
-            }
-            .about__box_header {
-                font-family: $fontFamilyPlay;
-                font-size: 38px;
-                color: $backGroundColorMain;
-
-            }
-
-            // .about__btn {
-            //     display: block;
-            //     margin: 0 auto;
-            //     margin-top: 30px;
-            //     border-radius: 10px;
-            //     background-color: #436;
-            //     color: #fff;
-            //     padding: 10px 20px;
-            //     text-transform: uppercase;
-            //     font-size: 16px;
-            // }
-        }
-        .about__image {
-            .about__image_img {}
-            
-        }
-    }
-}
-
-.section__about {
-
-    .about {
-        display: flex;
-        justify-content: space-between;
-        padding: 30px 0;
-        .about__box {
-            line-height: 2;
-            margin: 0 auto;
-            text-align: center;
-
-            .about__box_paragraph {
-                font-family: $fontFamily;
-                font-size: 28px;
+                font-size: 24px;
                 color: $backGroundColorMain;
 
             }
@@ -69,32 +23,39 @@
 
             .about__form {
                 font-family: $fontFamilyPlay;
-                font-size: 26px;
+                font-size: 24px;
                 color: #999933;
 
                 .about__form_square {
 
                     .about__form_square-input {
-                    
+                        // margin: 20px 0 20px 20px;
                         font-family: $fontFamilyPlay;
-                        font-size: 36px;
-                        color: #c81231;
+                        font-size: 28px;
+                        color: #26273d;
                         text-align: center;
+                        background-color: #aaa;
                     }
+
+
+                }             
+                
+                .paragraph__result {
                 }
 
                 .select {
                     color: #c81231;
                     font-family: $fontFamilyPlay;
                     font-size: 20px;
+                    margin-left: 20px;
+                    background-color: #aaa;
                 }
 
                 .about__form_result {
                     display: block;
+                    margin: 20px 0 0 0;
                 }
                 
-
-                .about__btn {}
             }
         }
 
@@ -107,4 +68,163 @@
 
     }
 
+}
+
+
+@media screen and (max-width: 991px) {
+    .section__about {
+
+        .about {
+            background: url('../img/main__room.jpg') no-repeat 0 0/ auto auto;
+            .about__box {
+                margin: 0 0 0 150px;
+                text-align: left;
+    
+                .about__box_paragraph {
+    
+                }
+                .about__box_header {
+                }
+    
+                .about__form {
+    
+                    .about__form_square {
+    
+                        .about__form_square-input {
+                        }
+    
+    
+                    }             
+                    
+                    .paragraph__result {
+                    }
+    
+                    .select {
+                    }
+    
+                    .about__form_result {
+                    }
+                    
+                }
+            }
+    
+            .about__image {
+                display: none;
+                .about__image_img {}
+            }
+    
+    
+    
+        }
+    
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section__about {
+
+        .about {
+            .about__box {
+                margin: 0 auto;
+                text-align: left;
+                .about__box_paragraph {
+    
+                }
+                .about__box_header {
+                }
+    
+                .about__form {
+    
+                    .about__form_square {
+    
+                        .about__form_square-input {
+                        }
+    
+    
+                    }             
+                    
+                    .paragraph__result {
+                    }
+    
+                    .select {
+                    }
+    
+                    .about__form_result {
+                    }
+                    
+                }
+            }
+    
+            .about__image {
+                .about__image_img {}
+            }
+    
+    
+    
+        }
+    
+    }
+}
+
+
+@media screen and (max-width: 489px) {
+    .section__about {
+
+        .about {
+            background: none;
+            .about__box {
+                text-align: center;
+
+                .about__box_paragraph {
+                    font-size: 18px;
+                }
+                .about__box_header {
+                    font-size: 28px;
+                }
+    
+                .about__form {
+    
+                    .about__form_square {
+                        font-size: 18px;
+    
+                        .about__form_square-input {
+                        font-size: 18px;
+                        }    
+    
+                    }
+                    
+                    .about__form_label {
+                        font-size: 18px;
+
+                    }
+
+                    .select {
+                        display: block;
+                    }
+                    
+                    .paragraph__result {
+                        font-size: 18px;
+
+                    }
+    
+                    .select {
+                    }
+    
+                    .about__form_result {
+                        font-size: 20px;
+                        margin: 0;
+                    }
+                    
+                }
+            }
+    
+            .about__image {
+                .about__image_img {}
+            }
+    
+    
+    
+        }
+    
+    }
 }
