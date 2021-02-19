@@ -24,12 +24,11 @@
             .about__form {
                 font-family: $fontFamilyPlay;
                 font-size: 24px;
-                color: #999933;
+                color: #26273d;
 
                 .about__form_square {
 
                     .about__form_square-input {
-                        // margin: 20px 0 20px 20px;
                         font-family: $fontFamilyPlay;
                         font-size: 28px;
                         color: #26273d;
@@ -75,7 +74,8 @@
     .section__about {
 
         .about {
-            background: url('../img/main__room.jpg') no-repeat 0 0/ auto auto;
+            background: url('../img/bgi.jpg') no-repeat 0 0/ 100% 100%;
+            filter: brightness(110%);
             .about__box {
                 margin: 0 0 0 150px;
                 text-align: left;

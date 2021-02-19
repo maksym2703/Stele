@@ -140,7 +140,56 @@
 
 
 @media screen and (max-width: 576px) {
+
     .reviews {
-        display: none;
+    
+        .reviews__container {
+    
+            .reviews__box {
+                
+    
+    
+                .reviews__head {
+    
+    
+                    .reviews__head_header {
+                        font-size: 25px;
+                        text-align: center;
+                    }
+                    .reviews__head_text {
+                        font-size: 14px;
+                        text-align: justify;
+                    }
+                }
+    
+                .reviews__answers {
+                    flex-direction: column;
+                    
+    
+                    .reviews__about {
+                        max-width: 100%;
+    
+                        .reviews__answers_header {
+                        }
+    
+                        .reviews__answers_header::before {
+                            
+                        }
+    
+                        .reviews__answers_paragraph {
+                        }
+
+
+                        .reviews__answers_bnt {
+                            
+                        }
+                    }
+    
+                    
+                }
+    
+            }
+        }
+    
     }
 }

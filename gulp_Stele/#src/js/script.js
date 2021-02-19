@@ -37,24 +37,19 @@ $(document).ready(function(){
     $('.slider').slick({
         infinite: true,
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 2,
         adaptiveHeight: true,
           responsive: [
             {
               breakpoint: 1200,
               settings: {
-                slidesToShow: 2,
                 slidesToScroll:  1,
-                dots: false
-                // arrow: true
-
               }
             },
           {
             breakpoint: 992,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
+              slidesToShow: 2,
             }
           },
           {
@@ -62,13 +57,26 @@ $(document).ready(function(){
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              dots: true,
+              autoplay: true,
 
+            } 
+          },
+          {
+            breakpoint: 389,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true,
+              autoplay: true,
+              arrows: false
             }
           }
         ]
     });
 });
+
+
+
 function findOption(select) {
   const option = select.querySelector(`option[value="${select.value}"]`)
   // Действия над option
