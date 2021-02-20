@@ -1309,15 +1309,14 @@ h6 {
   }
 
   .footer .footer-box .footer-box__contacts .footer-box__contacts_text {
-    padding: 0;
+    padding: 0 0 15px 0;
     text-align: center;
   }
 
   .footer .footer-box .footer-box__contacts .footer-box__contacts_phone {
     text-align: center;
-    padding: 0;
+    padding: 15px 0 0 0;
     position: relative;
-    padding-right: 20px;
   }
 
   .footer .footer-box .footer-box__contacts .footer-box__contacts_phone::after {
@@ -1329,7 +1328,7 @@ h6 {
   }
 
   .footer .footer-box .footer-box__contacts .footer-box__contacts_email {
-    padding: 0;
+    padding: 15px 0 0 0;
     text-transform: none;
     position: relative;
     margin-left: 0;
@@ -1341,7 +1340,7 @@ h6 {
   }
 
   .footer .footer-box .footer-box__contacts .footer-box__contacts_fb {
-    padding: 0;
+    padding: 15px 0 0 0;
     text-transform: none;
     position: relative;
     margin-left: 0;
@@ -1353,7 +1352,7 @@ h6 {
   }
 
   .footer .footer-box .footer-box__contacts .footer-box__contacts_addres {
-    padding: 0 0 0 0;
+    padding: 15px 0 0 0;
     text-transform: none;
     position: relative;
     margin-left: 0;
@@ -1503,7 +1502,7 @@ h6 {
 
   .container .navigation .navigation__nav .navigation__list .navigation__list_item {
     display: block;
-    padding: 0 20px 0 0;
+    padding: 15px 20px 0 0;
   }
 
   .container .navigation .navigation__nav .navigation__list .navigation__list_item .navigation__list_link {
