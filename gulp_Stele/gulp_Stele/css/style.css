@@ -421,7 +421,7 @@ h6 {
 
 .section__slide .slider__box .slider {
   position: relative;
-  padding: 0 50px;
+  padding: 0 40px;
   margin-bottom: 30px;
 }
 
@@ -449,14 +449,14 @@ h6 {
   background: url("../img/ArrRight.png") 0 0/100% no-repeat; }
 
 .section__slide .slider__box .slider .slick-next {
-  right: 20px;
+  right: 10px;
 }
 
 ._no-webp .section__slide .slider__box .slider .slick-prev{
   background: url("../img/ArrLeft.png") 0 0/100% no-repeat; }
 
 .section__slide .slider__box .slider .slick-prev {
-  left: 20px;
+  left: 10px;
 }
 
 .section__slide .slider__box .slider .slick-dots {

@@ -16,8 +16,9 @@
 
         .slider {
             position: relative;
-            padding: 0 50px;
+            padding: 0 40px;
             margin-bottom: 30px;
+
 
             .slick-list {
                 overflow: hidden;
@@ -40,12 +41,12 @@
             }
 
             .slick-next {
-                right: 20px;
+                right: 10px;
                 background: url('../img/ArrRight.png') 0 0/ 100% no-repeat;
             }
 
             .slick-prev {
-                left: 20px;
+                left: 10px;
                 background: url('../img/ArrLeft.png') 0 0/ 100% no-repeat;
 
             }

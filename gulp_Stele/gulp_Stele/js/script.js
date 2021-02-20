@@ -35,13 +35,11 @@ for(let el of tabLinks) {
 
 $(document).ready(function(){
     $('.slider').slick({
-        infinite: true,
         slidesToShow: 3,
         slidesToScroll: 2,
-        adaptiveHeight: true,
           responsive: [
             {
-              breakpoint: 1200,
+              breakpoint: 1199,
               settings: {
                 slidesToScroll:  1,
               }
@@ -68,7 +66,7 @@ $(document).ready(function(){
               slidesToScroll: 1,
               dots: true,
               autoplay: true,
-              arrows: false
+              arrows: false,
             }
           }
         ]
