@@ -6,10 +6,11 @@
 
             <form class="about__form">
                 <p class="about__form_square">Площадь потолка (м²):
-                    <input class="about__form_square-input" type="number" id="s" value="1" min="1" max="50" step="1">
+                    <input class="about__form_square-input" type="number" id="s" value="1" min="1" max="50" step="1"  >
                 </p>
                 <label class="about__form_label">Выбрать тип потолка:</label>
                 <select class="select" onchange='findOption(this)'>
+                <option value='zero'>Нажамите для выбора</option>
                 <option value='one'>Глянцевые</option>
                 <option value='two'>Матовые</option>
                 <option value='three'>Двухуровневые</option>
